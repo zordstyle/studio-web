@@ -3,4 +3,16 @@ body {
     padding: 0;
     margin: 0;
     font-size: 10px;
+    color: #FFF;
+    background-color: #232B77;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

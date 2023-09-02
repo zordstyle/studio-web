@@ -1,0 +1,50 @@
+.aboutWrap {
+
+}
+
+.contentBox {
+
+}
+
+.squareBox {
+    width: 300px;
+    height: 320px;
+    margin: 0 auto;
+    border: 1px solid #FFF;
+    position: relative;
+}
+
+.logoBox {
+    height: 100%;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.squareTextBox {
+    width: 150px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+}
+
+.squareText {
+    font-size: 18px;
+    color: #232B77;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 0 120px;
+    font-size: 20px;
+    text-align: center;
+}

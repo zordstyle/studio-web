@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from "next/link";
-import { Inter } from 'next/font/google'
+import Link from "next/link"
 
 import styles from '@styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import homeLogo from '@images/logo_home.png'
 
 export default function Home() {
   return (
@@ -16,10 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.wrap}>
-        <Link href="/about">about</Link>
-        <Link href="/works">works</Link>
-        <Link href="/contact">contact</Link>
+      <main className={styles.homeWrap}>
+        <div className={styles.homeLogoWrap}>
+          <Image src={homeLogo} alt="home logo"/>
+        </div>
       </main>
     </>
   )
