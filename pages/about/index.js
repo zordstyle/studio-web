@@ -9,8 +9,8 @@ const Index = () => {
   return (
     <div className={page.wrap}>
       <div className={page.title}>ABOUT</div>
-      <div className={styles.aboutWrap}>
-        <div className={styles.contentBox}>
+      <div className={page.contentWrap}>
+        <div className={page.contentBox}>
           <div className={styles.squareBox}>
             <div className={styles.logoBox}>
               <Image src={aboutMainImg}/>

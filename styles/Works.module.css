@@ -1,0 +1,16 @@
+.categoryTabBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryTab {
+    font-size: 12px;
+    line-height: 23px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.categoryTab.active {
+    font-weight: 800;
+}
