@@ -1,0 +1,28 @@
+.modalWrap {
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    z-index: 1000;
+}
+
+.modalHeader {
+    display: flex;
+}
+
+.modalClose {
+    color: #000;
+    cursor: pointer;
+}
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}

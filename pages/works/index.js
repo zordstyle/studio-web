@@ -4,6 +4,10 @@ import Image from 'next/image';
 import page from '@styles/Page.module.css'
 import styles from "@styles/Works.module.css";
 
+import contentData from '../../contentsData/videoData'
+import testThumbnail from '@images/instagram.png'
+import ContentModal from '@components/ContentModal';
+
 const Index = () => {
 
   const [tabs, setTabs] = useState([
@@ -13,9 +17,13 @@ const Index = () => {
     {title: 'CONTENTS', active: false},
     {title: 'SHORTS', active: false},
   ]);
+  const [currentTab, setCurrentTab] = useState('ALL')
+  const [openModal, setOpenModal] = useState(false)
+  const [modalData, setModalData] = useState('')
 
   const changeTab = (idx) => {
     resetTab()
+    setCurrentTab(tabs[idx].title)
     tabs[idx].active = true;
     setTabs([...tabs])
   }
@@ -25,6 +33,18 @@ const Index = () => {
       tab.active = false
     })
   }
+
+  const openContentModal = (data) => {
+    // console.log(data);
+    setModalData(data)
+    setOpenModal(true)
+  }
+
+  const closeContentModal = () => {
+    setOpenModal(false)
+  }
+
+  console.log(contentData)
 
   return (
     <div className={page.wrap}>
@@ -42,8 +62,29 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <div className={styles.contentListWrap}>
+            { contentData ? contentData.map((content, idx) => (
+              <div 
+                className={`
+                  ${styles.contentListBox}
+                  ${currentTab === 'ALL' || currentTab === content.type ? "" : styles.noDisplay}
+                `}
+                onClick={() => openContentModal(content)}
+              >
+                <div className={styles.contentList}>
+                  <Image src={testThumbnail}/>
+                </div>
+              </div>
+            )) : null}
+          </div>
         </div>
       </div>
+      { openModal ? (
+        <ContentModal 
+        data={modalData} 
+        closeEvent={closeContentModal}
+        />
+      ) : null }
     </div>
   );
 };

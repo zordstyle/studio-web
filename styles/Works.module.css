@@ -14,3 +14,38 @@
 .categoryTab.active {
     font-weight: 800;
 }
+
+.contentListWrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px 0;
+    /* border: 1px solid black; */
+}
+
+.contentListBox {
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid white; */
+}
+
+.contentListBox.noDisplay {
+    display: none;
+}
+
+.contentList {
+    width: 100%;
+    /* padding-top: calc(1080 / 1920 * 100%); */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.contentList img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
