@@ -70,9 +70,13 @@ const Index = () => {
                   ${currentTab === 'ALL' || currentTab === content.type ? "" : styles.noDisplay}
                 `}
                 onClick={() => openContentModal(content)}
+                key={`videoContent${content.url}`}
               >
                 <div className={styles.contentList}>
-                  <Image src={testThumbnail}/>
+                  <Image
+                    src={testThumbnail}
+                    // src={`/images/thumbmail/${conetnt.thumbnail}.png`}
+                  />
                 </div>
               </div>
             )) : null}

@@ -28,7 +28,11 @@
     flex-wrap: wrap;
     overflow: hidden;
     cursor: pointer;
-    /* border: 1px solid white; */
+    /*opacity: 1;*/
+    /*transform: scale(0.001);*/
+    /*transition-property: opacity, transform;*/
+    /*transition-duration: 0.4s;*/
+    /*transition-delay: 0ms;*/
 }
 
 .contentListBox.noDisplay {
@@ -37,7 +41,6 @@
 
 .contentList {
     width: 100%;
-    /* padding-top: calc(1080 / 1920 * 100%); */
     padding-top: 56.25%;
     position: relative;
 }
@@ -48,4 +51,11 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.contentList:hover img {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
 }
