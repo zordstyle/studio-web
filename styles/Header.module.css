@@ -43,6 +43,74 @@
     letter-spacing: .4em;
 }
 
+.mobMenuButton {
+    display: none;
+    width: 50px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #232B77;
+}
+
+.menuIcon {
+    width: 26px;
+    height: 16px;
+}
+
+.menuIcon>rect {
+    width: 26px;
+    height: 2px;
+    fill: #232B77;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.menuIcon .top{
+    -webkit-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}
+
+.menuIcon .mid{
+    -webkit-transform: translateY(44%);
+    -o-transform: translateY(44%);
+    transform: translateY(44%);
+}
+
+.menuIcon .bot{
+    -webkit-transform: translateY(88%);
+    -o-transform: translateY(88%);
+    transform: translateY(88%);
+}
+
+.menuIcon.open {
+    width: 15px;
+    height: 15px;
+}
+
+.menuIcon.open>rect {
+    width: 128.1%;
+    height: 2px;
+}
+
+.menuIcon.open .top{
+    -webkit-transform: translate(10%, 0%) rotate(45deg);
+    -o-transform: translate(10%, 0%) rotate(45deg);
+    transform: translate(10%, 0%) rotate(45deg);
+}
+
+.menuIcon.open .mid{
+    width: 0;
+}
+
+.menuIcon.open .bot{
+    -webkit-transform: translate(0%, 90%) rotate(-45deg);
+    -o-transform: translate(0%, 90%) rotate(-45deg);
+    transform: translate(0%, 90%) rotate(-45deg);
+}
+
 @media (max-width: 1024px) {
     .headerWrap {
         background-color: #FFF;
@@ -52,6 +120,10 @@
 
     .headerBox {
         
+    }
+
+    .mobMenuButton {
+        display: flex;
     }
 
     .headerMenuWrap {
@@ -65,6 +137,10 @@
         background-color: #FFF;
         padding: 0 20px;
         z-index: 100;
+    }
+
+    .headerMenuWrap.menuOpen {
+        display: flex;
     }
 
     .headerMenu {

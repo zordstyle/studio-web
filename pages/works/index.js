@@ -1,50 +1,49 @@
-import React, {useState} from 'react';
-import Image from 'next/image';
+import React, { useState } from "react";
+import Image from "next/image";
 
-import page from '@styles/Page.module.css'
+import page from "@styles/Page.module.css";
 import styles from "@styles/Works.module.css";
 
-import contentData from '../../contentsData/videoData'
-import testThumbnail from '@images/instagram.png'
-import ContentModal from '@components/ContentModal';
+import contentData from "../../contentsData/videoData";
+import testThumbnail from "@images/instagram.png";
+import ContentModal from "@components/ContentModal";
 
 const Index = () => {
-
   const [tabs, setTabs] = useState([
-    {title: 'ALL', active: true},
-    {title: 'COMMERCIAL', active: false},
-    {title: 'M/V', active: false},
-    {title: 'CONTENTS', active: false},
-    {title: 'SHORTS', active: false},
+    { title: "ALL", active: true },
+    { title: "COMMERCIAL", active: false },
+    { title: "M/V", active: false },
+    { title: "CONTENTS", active: false },
+    { title: "SHORTS", active: false },
   ]);
-  const [currentTab, setCurrentTab] = useState('ALL')
-  const [openModal, setOpenModal] = useState(false)
-  const [modalData, setModalData] = useState('')
+  const [currentTab, setCurrentTab] = useState("ALL");
+  const [openModal, setOpenModal] = useState(false);
+  const [modalData, setModalData] = useState("");
 
   const changeTab = (idx) => {
-    resetTab()
-    setCurrentTab(tabs[idx].title)
+    resetTab();
+    setCurrentTab(tabs[idx].title);
     tabs[idx].active = true;
-    setTabs([...tabs])
-  }
+    setTabs([...tabs]);
+  };
 
   const resetTab = () => {
     tabs.map((tab) => {
-      tab.active = false
-    })
-  }
+      tab.active = false;
+    });
+  };
 
   const openContentModal = (data) => {
     // console.log(data);
-    setModalData(data)
-    setOpenModal(true)
-  }
+    setModalData(data);
+    setOpenModal(true);
+  };
 
   const closeContentModal = () => {
-    setOpenModal(false)
-  }
+    setOpenModal(false);
+  };
 
-  console.log(contentData)
+  console.log(contentData);
 
   return (
     <div className={page.wrap}>
@@ -52,9 +51,11 @@ const Index = () => {
       <div className={page.contentWrap}>
         <div className={page.contentBox}>
           <div className={styles.categoryTabBox}>
-            { tabs.map((tab, idx) => (
+            {tabs.map((tab, idx) => (
               <div
-                className={`${styles.categoryTab} ${tab.active ? styles.active : ""}`}
+                className={`${styles.categoryTab} ${
+                  tab.active ? styles.active : ""
+                }`}
                 key={`categoryTab${tab.title}`}
                 onClick={() => changeTab(idx)}
               >
@@ -63,32 +64,39 @@ const Index = () => {
             ))}
           </div>
           <div className={styles.contentListWrap}>
-            { contentData ? contentData.map((content, idx) => (
-              <div 
-                className={`
+            {contentData
+              ? contentData.map((content, idx) => (
+                  <div
+                    className={`
                   ${styles.contentListBox}
-                  ${currentTab === 'ALL' || currentTab === content.type ? "" : styles.noDisplay}
+                  ${
+                    currentTab === "ALL" || currentTab === content.type
+                      ? ""
+                      : styles.noDisplay
+                  }
                 `}
-                onClick={() => openContentModal(content)}
-                key={`videoContent${content.url}`}
-              >
-                <div className={styles.contentList}>
-                  <Image
-                    src={testThumbnail}
-                    // src={`/images/thumbmail/${conetnt.thumbnail}.png`}
-                  />
-                </div>
-              </div>
-            )) : null}
+                    onClick={() => openContentModal(content)}
+                    key={`videoContent${content.url}`}
+                  >
+                    <div className={styles.contentList}>
+                      <Image
+                        // src={testThumbnail}
+                        src={`/images/thumbnail/${content.thumbnail}.jpg`}
+                        width={300}
+                        height={300}
+                        alt={`${content.title} thumbnail`}
+                        priority={true}
+                      />
+                    </div>
+                  </div>
+                ))
+              : null}
           </div>
         </div>
       </div>
-      { openModal ? (
-        <ContentModal 
-        data={modalData} 
-        closeEvent={closeContentModal}
-        />
-      ) : null }
+      {openModal ? (
+        <ContentModal data={modalData} closeEvent={closeContentModal} />
+      ) : null}
     </div>
   );
 };
