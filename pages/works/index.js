@@ -97,9 +97,7 @@ const Index = () => {
       </div>
       {openModal ? (
         // const [modalIsOpen, modalRef, modalHandler] = useDetectClose(false)
-        <div ref={modalRef}>
-          <ContentModal open={modalIsOpen}  data={modalData} closeEvent={modalHandler} />
-        </div>
+          <ContentModal data={modalData} closeEvent={closeContentModal} />
       ) : null}
     </div>
   );

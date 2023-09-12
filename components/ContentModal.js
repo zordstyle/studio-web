@@ -6,7 +6,7 @@ import closeIcon from '@images/close_icon.png';
 
 const ContentModal = ({
     data,
-    open,
+    open = true,
     closeEvent,
 }) => {
 
