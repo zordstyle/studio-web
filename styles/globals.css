@@ -16,3 +16,26 @@ img {
     width: 100%;
     height: auto;
 }
+
+/* font */
+
+/*@font-face {*/
+/*    font-family: "KiaSignature";*/
+/*    font-weight: 300;*/
+/*    src: url("../public/fonts/KiaSignatureLight.ttf") format("truetype"),*/
+/*    url("../public/fonts/KiaSignatureOTFLight.otf") format("opentype");*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "KiaSignature";*/
+/*    font-weight: 400;*/
+/*    src: url("../public/fonts/KiaSignatureRegular.ttf") format("truetype"),*/
+/*    url("../public/fonts/KiaSignatureOTFRegular.otf") format("opentype");*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "KiaSignature";*/
+/*    font-weight: 600;*/
+/*    src: url("../public/fonts/KiaSignatureBold.ttf") format("truetype"),*/
+/*    url("../public/fonts/KiaSignatureOTFBold.otf") format("opentype");*/
+/*}*/

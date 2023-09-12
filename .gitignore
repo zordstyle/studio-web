@@ -38,3 +38,7 @@ next-env.d.ts
 /.idea
 
 /package-lock.json
+
+/videos
+
+/fonts

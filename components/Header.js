@@ -29,7 +29,7 @@ const Header = () => {
           <svg
             className={`${styles.menuIcon} ${mobMenuOpen ? styles.open : ""}`}
             xmlns="http://www.w3.org/2000/svg"
-            viewbox={mobMenuOpen ? "0 0 26 16" : "0 0 15 15"}
+            viewBox={mobMenuOpen ? "0 0 26 16" : "0 0 15 15"}
           >
             <rect className={styles.top}></rect>
             <rect className={styles.mid}></rect>
