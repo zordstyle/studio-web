@@ -29,7 +29,7 @@ const Header = () => {
           <svg
             className={`${styles.menuIcon} ${mobMenuOpen ? styles.open : ""}`}
             xmlns="http://www.w3.org/2000/svg"
-            viewBox={mobMenuOpen ? "0 0 26 16" : "0 0 15 15"}
+            viewBox={mobMenuOpen ? "0 0 15 15" : "0 0 23 16"}
           >
             <rect className={styles.top}></rect>
             <rect className={styles.mid}></rect>
@@ -37,30 +37,26 @@ const Header = () => {
           </svg>
           {/* <Image src={headerLogo} alt="header logo" /> */}
         </div>
-        <nav
-          className={`
+      </div>
+      <nav
+        className={`
           ${styles.headerMenuWrap}
           ${mobMenuOpen ? styles.menuOpen : ""}
           `}
-        >
-          <Link className={styles.headerMenu} href="/" onClick={closeMenu}>
-            HOME
-          </Link>
-          <Link className={styles.headerMenu} href="/about" onClick={closeMenu}>
-            ABOUT
-          </Link>
-          <Link className={styles.headerMenu} href="/works" onClick={closeMenu}>
-            WORKS
-          </Link>
-          <Link
-            className={styles.headerMenu}
-            href="/contact"
-            onClick={closeMenu}
-          >
-            CONTACT
-          </Link>
-        </nav>
-      </div>
+      >
+        <Link className={styles.headerMenu} href="/" onClick={closeMenu}>
+          HOME
+        </Link>
+        <Link className={styles.headerMenu} href="/about" onClick={closeMenu}>
+          ABOUT
+        </Link>
+        <Link className={styles.headerMenu} href="/works" onClick={closeMenu}>
+          WORKS
+        </Link>
+        <Link className={styles.headerMenu} href="/contact" onClick={closeMenu}>
+          CONTACT
+        </Link>
+      </nav>
     </header>
   );
 };

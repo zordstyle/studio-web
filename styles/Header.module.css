@@ -3,6 +3,7 @@
     width: calc(100% - 40px);
     max-width: 1060px;
     height: 90px;
+    display: flex;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -59,7 +60,7 @@
 }
 
 .menuIcon>rect {
-    width: 26px;
+    width: 23px;
     height: 2px;
     fill: #232B77;
     -webkit-transition: all .2s ease-in;
@@ -96,9 +97,9 @@
 }
 
 .menuIcon.open .top{
-    -webkit-transform: translate(10%, 0%) rotate(45deg);
-    -o-transform: translate(10%, 0%) rotate(45deg);
-    transform: translate(10%, 0%) rotate(45deg);
+    -webkit-transform: translate(12%, 0%) rotate(45deg);
+    -o-transform: translate(12%, 0%) rotate(45deg);
+    transform: translate(12%, 0%) rotate(45deg);
 }
 
 .menuIcon.open .mid{
@@ -106,20 +107,23 @@
 }
 
 .menuIcon.open .bot{
-    -webkit-transform: translate(0%, 90%) rotate(-45deg);
-    -o-transform: translate(0%, 90%) rotate(-45deg);
-    transform: translate(0%, 90%) rotate(-45deg);
+    -webkit-transform: translate(0%, 88%) rotate(-45deg);
+    -o-transform: translate(0%, 88%) rotate(-45deg);
+    transform: translate(0%, 88%) rotate(-45deg);
 }
 
 @media (max-width: 1024px) {
     .headerWrap {
         background-color: #FFF;
         height: 70px;
-        position: relative;
+        position: fixed;
+        z-index: 1000;
     }
 
     .headerBox {
-        
+        position: relative;
+        background-color: #FFF; 
+        z-index: 200;
     }
 
     .mobMenuButton {
@@ -127,22 +131,25 @@
     }
 
     .headerMenuWrap {
-        display: none;
-        position: absolute;
-        top: 70px;
         width: calc(100% - 40px);
+        /* display: none; */
+        position: absolute;
+        top: 69px;
         left: 0;
-        /* display: flex; */
         flex-direction: column;
         background-color: #FFF;
         padding: 0 20px;
         z-index: 100;
+        transform: translateY(-100%);
+        transition: all .3s ease-in-out;
     }
 
     .headerMenuWrap.menuOpen {
-        display: flex;
+        /* display: flex; */
+        transform: translateY(0%);
     }
 
+  
     .headerMenu {
         width: 100%;
         color: #232B77;
