@@ -1,11 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 import styles from "@styles/Home.module.css";
 import homeLogo from "@images/logo_home.png";
 import Background from "@components/Background";
 
 export default function Home() {
+  const [videoLoad, setVideoLoad] = useState(false);
+
   return (
     <>
       <Head>
@@ -14,12 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Background />
-      <main className={styles.homeWrap}>
-        <div className={styles.homeLogoWrap}>
-          <Image src={homeLogo} alt="home logo" />
-        </div>
-      </main>
+      <Background loading={setVideoLoad} />
+      {videoLoad && (
+        <main className={styles.homeWrap}>
+          <div className={styles.homeLogoWrap}>
+            <Image src={homeLogo} alt="home logo" />
+          </div>
+        </main>
+      )}
     </>
   );
 }
