@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "@styles/Home.module.css";
 import background_mp4 from "@videos/background.mp4";
 import background_ogv from "@videos/background.ogv";
-// import background_webm from "@videos/background.webm";
+import background_webm from "@videos/background.webm";
 
 const Background = () => {
   const [hasWindow, setHasWindow] = useState(false);
@@ -16,7 +16,7 @@ const Background = () => {
     <>
       {hasWindow && (
         <video autoPlay muted loop className={styles.backgroundVideo}>
-          {/* <source src={background_webm} type="video/webm" /> */}
+          <source src={background_webm} type="video/webm" />
           <source src={background_ogv} type="video/ogv" />
           <source src={background_mp4} type="video/mp4" />
         </video>
