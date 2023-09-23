@@ -29,6 +29,7 @@ const ContentModal = ({
                           <ReactPlayer
                             className={styles.videoBox}
                             controls={true}
+                            playsinline={true}
                             url={data.url}
                             width="100%"
                             height="100%"

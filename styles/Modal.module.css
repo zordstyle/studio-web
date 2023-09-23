@@ -48,3 +48,15 @@
     top: 0;
     left: 0;
 }
+
+@media (min-width: 1921px) {
+    .modalClose {
+        width: 1.5625vw;
+        height: 1.5625vw;
+        margin-bottom: 0.7813vw;
+    }
+    
+    .modalClose img {
+        width: 1.3021vw;
+    }
+}
