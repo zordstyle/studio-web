@@ -28,6 +28,7 @@ const ContentModal = ({
                       <div className={styles.videoWrap}>
                           <ReactPlayer
                             className={styles.videoBox}
+                            controls={true}
                             url={data.url}
                             width="100%"
                             height="100%"

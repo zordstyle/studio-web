@@ -40,3 +40,27 @@
     font-size: 20px;
     text-align: center;
 }
+
+@media (min-width: 1921px) {
+    .squareBox {
+        width: 15.625vw;
+        height: 16.6667vw;
+    }
+    .logoBox {
+        padding: 0px 2.0833vw;
+    }
+    .squareTextBox {
+        width: 7.8125vw;
+        height: 1.8750vw;
+        bottom: -0.9375vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .squareText {
+        font-size: 0.9375vw;
+    }
+    .text {
+        padding: 3.9063vw 0 6.25vw;
+        font-size: 1.0417vw;
+    }
+}

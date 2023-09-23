@@ -44,8 +44,6 @@ const Index = () => {
     setOpenModal(false);
   };
 
-  console.log(contentData);
-
   return (
     <div className={page.wrap}>
       <div className={page.title}>WORKS</div>

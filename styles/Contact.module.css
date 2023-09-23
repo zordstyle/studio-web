@@ -75,6 +75,23 @@
 
 }
 
+@media (min-width: 1921px) {
+    .infoWrap {
+        padding: 1.5625vw 0
+    }
+    
+    .infoBox {
+        padding: 0.7813vw;
+        font-size: 0.7292vw;
+        line-height: 0.9896vw;
+    }
+
+    .socialIcon {
+        width: 1.8229vw;
+        margin-right: 0.6250vw;
+    }
+}
+
 @media (max-width: 1024px) {
     .contactWrap {
         padding: 0 20px;

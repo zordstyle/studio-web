@@ -1,6 +1,6 @@
 .wrap {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 
@@ -20,4 +20,24 @@
 
 .contentBox {
 
+}
+
+@media (min-width: 1921px) {
+    .wrap {
+        max-width: 57.2917vw;
+    }
+
+    .title {
+        font-size: 1.4583vw;
+        line-height: 1.6667vw;
+        padding: 2.0833vw 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        padding-top: 130px;
+        font-size: 28px;
+        line-height: 32px;
+    }
 }

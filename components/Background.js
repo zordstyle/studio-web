@@ -22,6 +22,7 @@ const Background = ({ loading }) => {
           autoPlay
           muted
           loop
+          playsinline
           className={styles.backgroundVideo}
         >
           <source src={background_webm} type="video/webm" />

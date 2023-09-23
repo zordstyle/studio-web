@@ -8,3 +8,10 @@
     /* position: absolute;
     bottom: 0; */
 }
+
+@media (min-width: 1921px) {
+    .footerWrap {
+        height: 3.125vw;
+        font-size: 0.5208vw;
+    }
+}
