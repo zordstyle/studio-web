@@ -5,6 +5,8 @@ body {
     font-size: 10px;
     color: #FFF;
     background-color: #232B77;
+    --ion-safe-area-top: env(safe-area-inset-top);
+    --ion-safe-area-bottom: env(safe-area-inset-bottom);
 }
 
 a {
