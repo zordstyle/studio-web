@@ -145,12 +145,13 @@
 @media (max-width: 1024px) {
     .headerWrap {
         width: calc(100% - 40px);
+        padding: calc(env(safe-area-inset-top)) 20px 0 20px;
         height: 70px;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 1000;
-        padding: 0 20px;
+        /*padding: 0 20px;*/
         background-color: #FFF;
     }
 

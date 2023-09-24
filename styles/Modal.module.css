@@ -60,3 +60,9 @@
         width: 1.3021vw;
     }
 }
+
+@media (max-width: 1024px) {
+    .modalWrap {
+        width: 90vw;
+    }
+}

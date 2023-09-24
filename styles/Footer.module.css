@@ -17,5 +17,6 @@
 @media (max-width: 1024px) {
     .footerWrap {
         position: relative;
+        padding: 0 0 0 calc(env(safe-area-inset-bottom));
     }
 }
