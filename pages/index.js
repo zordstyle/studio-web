@@ -24,11 +24,11 @@ export default function Home() {
           </div>
         </main>
       )}
-      {/* <div className={`${styles.loadingWrap} ${videoLoad && styles.hide}`}>
+      <div className={`${styles.loadingWrap} ${videoLoad && styles.hide}`}>
         <div className={styles.loadingLogoBox}>
           <Image src={loadginLogo} alt="home logo" />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
