@@ -6,7 +6,7 @@ import styles from "@styles/Works.module.css";
 
 import contentData from "../../contentsData/videoData";
 import ContentModal from "@components/ContentModal";
-import useDetectClose from "@hooks/useDetectClose"
+import useDetectClose from "@hooks/useDetectClose";
 
 const Index = () => {
   const [tabs, setTabs] = useState([
@@ -19,7 +19,7 @@ const Index = () => {
   const [currentTab, setCurrentTab] = useState("ALL");
   const [openModal, setOpenModal] = useState(false);
   const [modalData, setModalData] = useState("");
-  const [modalIsOpen, modalRef, modalHandler] = useDetectClose(false)
+  const [modalIsOpen, modalRef, modalHandler] = useDetectClose(false);
 
   const changeTab = (idx) => {
     resetTab();
@@ -74,7 +74,10 @@ const Index = () => {
                       : styles.noDisplay
                   }
                 `}
-                    onClick={() => {openContentModal(content); modalHandler();}}
+                    onClick={() => {
+                      openContentModal(content);
+                      modalHandler();
+                    }}
                     key={`videoContent${content.url}`}
                   >
                     <div className={styles.contentList}>
@@ -95,7 +98,7 @@ const Index = () => {
       </div>
       {openModal ? (
         // const [modalIsOpen, modalRef, modalHandler] = useDetectClose(false)
-          <ContentModal data={modalData} closeEvent={closeContentModal} />
+        <ContentModal data={modalData} closeEvent={closeContentModal} />
       ) : null}
     </div>
   );
