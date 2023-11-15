@@ -38,31 +38,33 @@ const Index = () => {
               </div>
               <div className={styles.infoBox}>
                 <div className={styles.infoTitle}>E-Mail.</div>
-                <div className={styles.infoText}>productiongaram@gmail.com</div>
+                <div className={styles.infoText}>
+                  productiongaram@garamprod.com
+                </div>
               </div>
               <div className={styles.infoBox}>
                 <div className={styles.infoTitle}>Tell.</div>
-                <div className={styles.infoText}>010-5573-1991</div>
+                <div className={styles.infoText}>010-2481-1931</div>
               </div>
             </div>
             <div className={styles.socialWrap}>
               <Link
                 className={styles.socialIcon}
-                href="https://www.naver.com"
+                href="https://docs.google.com/forms/d/11X7NvVZOEM3_S4aEa-dkf2z6p4UeX2fToKyZHdBw67c/edit"
                 target="_blank"
               >
                 <Image src={mailIcon} alt="mail icon" />
               </Link>
               <Link
                 className={styles.socialIcon}
-                href="https://www.naver.com"
+                href="https://www.instagram.com/garam_production/"
                 target="_blank"
               >
                 <Image src={instagramIcon} alt="instagram icon" />
               </Link>
               <Link
                 className={styles.socialIcon}
-                href="https://www.naver.com"
+                href="https://www.youtube.com/channel/UCSUoGYHCGS6BaBay-PYU6nw"
                 target="_blank"
               >
                 <Image src={youtubeIcon} alt="youtube icon" />
