@@ -16,7 +16,7 @@ export default function Home() {
         <title>Studio Web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Background loading={setVideoLoad} />
+      {/* <Background loading={setVideoLoad} /> */}
       {videoLoad && (
         <main className={styles.homeWrap}>
           <div className={styles.homeLogoWrap}>
