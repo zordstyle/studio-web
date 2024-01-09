@@ -17,17 +17,20 @@ const Background = ({ loading }) => {
 
   const loadComplete = () => {
     setIsLoading(true);
-  }
+  };
 
   return (
     <>
       {hasWindow && (
         <video
-          onLoadedData={() => {loading(true); loadComplete();}}
+          onLoadedData={() => {
+            loading(true);
+            loadComplete();
+          }}
           autoPlay
           muted
           loop
-          playsinline
+          // playsinline
           className={`${styles.backgroundVideo} ${isLoading && styles.show}`}
         >
           <source src={background_webm} type="video/webm" />
