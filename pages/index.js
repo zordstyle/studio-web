@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Background loading={setVideoLoad} />
       <video
-        src={require("../../public/video/background.mp4")}
+        src={require("../../public/videos/background.mp4")}
         autoPlay
         muted
         loop
