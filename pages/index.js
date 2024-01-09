@@ -17,18 +17,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Background loading={setVideoLoad} />
-      {videoLoad && (
+      <video
+        src={require("../../public/video/background.mp4")}
+        autoPlay
+        muted
+        loop
+        className={styles.video}
+      />
+      {/* {videoLoad && (
         <main className={styles.homeWrap}>
           <div className={styles.homeLogoWrap}>
             <Image src={homeLogo} alt="home logo" />
           </div>
         </main>
-      )}
-      {/* <div className={`${styles.loadingWrap} ${videoLoad && styles.hide}`}>
+      )} */}
+      <div className={`${styles.loadingWrap} ${videoLoad && styles.hide}`}>
         <div className={styles.loadingLogoBox}>
           <Image src={loadginLogo} alt="home logo" />
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
