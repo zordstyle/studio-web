@@ -63,7 +63,7 @@ const Index = () => {
             ))}
           </div>
           <div className={styles.contentListWrap}>
-            {contentData
+            {/* {contentData
               ? contentData.map((content, idx) => (
                   <div
                     className={`
@@ -92,7 +92,7 @@ const Index = () => {
                     </div>
                   </div>
                 ))
-              : null}
+              : null} */}
           </div>
         </div>
       </div>
