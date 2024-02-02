@@ -75,7 +75,8 @@
   }
 
   .homeLogoWrap img {
-    max-width: 200px;
+    width: 70%;
+    max-width: 400px;
   }
 
   .backgroundVideo {
