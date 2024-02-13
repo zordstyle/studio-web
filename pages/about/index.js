@@ -8,7 +8,6 @@ import aboutMainImg from "@images/about_main_img.png";
 const Index = () => {
   return (
     <div className={page.wrap}>
-      <title>About | 가람 프로덕션</title>
       <div className={page.title}>ABOUT</div>
       <div className={page.contentWrap}>
         <div className={page.contentBox}>
