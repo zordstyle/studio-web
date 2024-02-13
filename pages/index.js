@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>가람 프로덕션</title>
+        {/* <title>가람 프로덕션</title> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Background loading={setVideoLoad} />
