@@ -11,6 +11,7 @@ import mailIcon from "@images/mail.png";
 const Index = () => {
   return (
     <div className={page.wrap}>
+      <title>Contact | 가람 프로덕션</title>
       <div className={page.title}>CONTACT</div>
       <div className={page.contentWrap}>
         <div className={page.contentBox}>

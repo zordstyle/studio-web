@@ -46,6 +46,7 @@ const Index = () => {
 
   return (
     <div className={page.wrap}>
+      <title>Works | 가람 프로덕션</title>
       <div className={page.title}>WORKS</div>
       <div className={page.contentWrap}>
         <div className={page.contentBox}>
