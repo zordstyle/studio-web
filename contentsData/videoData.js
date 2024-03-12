@@ -59,7 +59,7 @@ const videoData = [
     idx: 9,
     title: "",
     thumbnail: "thumbnail_08",
-    type: "CONTENTS",
+    type: "COMMERCIAL",
     url: "https://youtu.be/TRBkxa53Ljw",
   },
   {
@@ -73,7 +73,7 @@ const videoData = [
     idx: 11,
     title: "",
     thumbnail: "thumbnail_10",
-    type: "SHORTS",
+    type: "COMMERCIAL",
     url: "https://youtu.be/qSxXcAHxP3E",
   },
   {
