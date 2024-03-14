@@ -108,7 +108,7 @@ const videoData = [
     idx: 16,
     title: "",
     thumbnail: "thumbnail_15",
-    type: "M/V",
+    type: "COMMERCIAL",
     url: "https://youtu.be/0i6m1Ergj5A",
   },
   {
@@ -250,6 +250,48 @@ const videoData = [
     thumbnail: "thumbnail_35",
     type: "CONTENTS",
     url: "https://youtu.be/hF4kw7AeeF0",
+  },
+  {
+    idx: 37,
+    title: "",
+    thumbnail: "thumbnail_36",
+    type: "CONTENTS",
+    url: "https://youtu.be/43oepay9K9s",
+  },
+  {
+    idx: 38,
+    title: "",
+    thumbnail: "thumbnail_37",
+    type: "CONTENTS",
+    url: "https://youtu.be/2i2CMtRVdH8",
+  },
+  {
+    idx: 39,
+    title: "",
+    thumbnail: "thumbnail_38",
+    type: "COMMERCIAL",
+    url: "https://youtu.be/5K9-SdQ34bg",
+  },
+  {
+    idx: 40,
+    title: "",
+    thumbnail: "thumbnail_39",
+    type: "COMMERCIAL",
+    url: "https://youtu.be/zggZp7cjoIg",
+  },
+  {
+    idx: 41,
+    title: "",
+    thumbnail: "thumbnail_40",
+    type: "COMMERCIAL",
+    url: "https://youtu.be/iYF5udAzS0Y",
+  },
+  {
+    idx: 42,
+    title: "",
+    thumbnail: "thumbnail_41",
+    type: "COMMERCIAL",
+    url: "https://youtu.be/ynMwDxfy-DQ",
   },
 ];
 
