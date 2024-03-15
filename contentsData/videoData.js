@@ -293,6 +293,13 @@ const videoData = [
     type: "COMMERCIAL",
     url: "https://youtu.be/ynMwDxfy-DQ",
   },
+  {
+    idx: 43,
+    title: "",
+    thumbnail: "thumbnail_42",
+    type: "CONTENTS",
+    url: "https://youtu.be/FpQPMA9MiSk",
+  },
 ];
 
 export default videoData;
