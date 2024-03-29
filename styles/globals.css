@@ -1,32 +1,32 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-size: 10px;
-    color: #FFF;
-    background-color: #232B77;
-    --ion-safe-area-top: env(safe-area-inset-top);
-    --ion-safe-area-bottom: env(safe-area-inset-bottom);
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  color: #fff;
+  background-color: #232b77;
+  --ion-safe-area-top: env(safe-area-inset-top);
+  --ion-safe-area-bottom: env(safe-area-inset-bottom);
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* font */
 
-/*@font-face {*/
-/*    font-family: "KiaSignature";*/
-/*    font-weight: 300;*/
-/*    src: url("../public/fonts/KiaSignatureLight.ttf") format("truetype"),*/
-/*    url("../public/fonts/KiaSignatureOTFLight.otf") format("opentype");*/
-/*}*/
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  src: url("../public/fonts/Pretendard-Bold.ttf") format("truetype"),
+    url("../public/fonts/Pretendard-Bold.otf") format("opentype");
+}
 
 /*@font-face {*/
 /*    font-family: "KiaSignature";*/
