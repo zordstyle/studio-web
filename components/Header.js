@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className={styles.headerWrap}>
+    <header className={styles.headerWrap} style={{ fontFamily: "Pretendard" }}>
       <div className={styles.headerBox}>
         <Link className={styles.headerLogo} href="/">
           <Image src={headerLogo} alt="header logo" />
